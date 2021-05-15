@@ -9,5 +9,4 @@ public class TerminatorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TerminatorApplication.class, args);
 	}
-
 }

@@ -1,7 +1,7 @@
 package ch.bbzw.terminator.controller;
 
-import ch.bbzw.terminator.model.Role;
-import ch.bbzw.terminator.service.RoleService;
+import ch.bbzw.terminator.model.Note;
+import ch.bbzw.terminator.service.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,17 +11,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api")
-public class RoleController {
+public class NoteController {
 
-    private final RoleService roleService;
+    private final NoteService noteService;
 
     @Autowired
-    public RoleController(RoleService roleService) {
-        this.roleService = roleService;
+    public NoteController(NoteService noteService) {
+        this.noteService = noteService;
     }
 
-    @GetMapping(path = "getRoles")
-    public List<Role> getRoles() {
-        return roleService.getRoles();
+    @GetMapping(path = "getNotes")
+    public List<Note> getNotes() {
+        return noteService.getNotes();
     }
 }
