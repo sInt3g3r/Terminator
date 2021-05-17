@@ -3,9 +3,7 @@ package ch.bbzw.terminator.controller;
 import ch.bbzw.terminator.model.Task;
 import ch.bbzw.terminator.service.TaskService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,4 +22,15 @@ public class TaskController {
     public List<Task> getTasks() {
         return taskService.getTasks();
     }
+
+    @PostMapping(path = "newTask")
+    public void newTask(@RequestBody Task task) {
+        taskService.newTask(task);
+    }
+
+    @DeleteMapping(path = "delTask/{id}")
+    public void delTask(@PathVariable("id") Long id) {
+        taskService.delTask(id);
+    }
+
 }

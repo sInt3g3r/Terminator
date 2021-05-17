@@ -20,4 +20,19 @@ public class TaskService {
     public List<Task> getTasks() {
         return taskRepo.findAll();
     }
+
+    public void newTask(Task task) {
+        taskRepo.save(task);
+    }
+
+    public void delTask(Long id) {
+        boolean exists = taskRepo.existsById(id);
+        if (exists) {
+            taskRepo.deleteById(id);
+        }
+        else {
+            throw new IllegalStateException("Task wurde nicht gefunden");
+        }
+    }
+
 }
