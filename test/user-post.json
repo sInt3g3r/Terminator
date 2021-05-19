@@ -1,0 +1,6 @@
+   {
+      "description" : "Neuer Benutzer, POST",
+      "roleId" : 2,
+      "userName" : "Chad Tyrone",
+      "userPw" : "secret"
+   }

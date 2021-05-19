@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service //Notwendig für @Autowired (bean)
 public class TaskService {
@@ -21,7 +22,7 @@ public class TaskService {
         return taskRepo.findAll();
     }
 
-    public void newTask(Task task) {
+    public void postTask(Task task) {
         taskRepo.save(task);
     }
 
@@ -35,4 +36,14 @@ public class TaskService {
         }
     }
 
+    public void putTask(Long id, Task task) {
+        boolean exists = taskRepo.existsById(id);
+        if (exists) {
+            task.setId(id);
+            taskRepo.save(task);
+        }
+        else {
+            throw new IllegalStateException("Task wurde nicht gefunden");
+        }
+    }
 }

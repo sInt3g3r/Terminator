@@ -23,9 +23,9 @@ public class TaskController {
         return taskService.getTasks();
     }
 
-    @PostMapping(path = "newTask")
-    public void newTask(@RequestBody Task task) {
-        taskService.newTask(task);
+    @PostMapping(path = "postTask")
+    public void postTask(@RequestBody Task task) {
+        taskService.postTask(task);
     }
 
     @DeleteMapping(path = "delTask/{id}")
@@ -33,4 +33,8 @@ public class TaskController {
         taskService.delTask(id);
     }
 
+    @PutMapping(path = "putTask/{id}")
+    public void putTask(@PathVariable("id") Long id, @RequestBody Task task) {
+        taskService.putTask(id,task);
+    }
 }
