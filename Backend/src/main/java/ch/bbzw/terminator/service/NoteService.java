@@ -18,11 +18,52 @@ public class NoteService {
         this.noteRepo = noteRepo;
     }
 
+    //readAll
     public List<Note> getNotes() {
         return noteRepo.findAll();
     }
 
-//    public Optional<Note> getNote(long id) {
-//        return Optional.ofNullable(noteRepo.findById(id));
-//    }
+    //readSingle
+    public Optional<Note> getNote(long id) {
+        boolean exists = noteRepo.existsById(id);
+        if (exists) {
+            return noteRepo.findById(id);
+        }
+        else {
+            throw new IllegalStateException("ID: "+id+" not found.");
+        }
+    }
+
+    //delete
+    public void delNote(Long id) {
+        boolean exists = noteRepo.existsById(id);
+        if (exists) {
+            noteRepo.deleteById(id);
+        }
+        else {
+            throw new IllegalStateException("ID: "+id+" not found.");
+        }
+    }
+
+    //replace
+    public void putNote(Long id, Note note) {
+        boolean exists = noteRepo.existsById(id);
+        if (exists) {
+            note.setId(id);
+            noteRepo.save(note);
+        }
+        else {
+            throw new IllegalStateException("ID: "+id+" not found.");
+        }
+    }
+
+    //create
+    public void postNote(Note note) {
+        if (note.getNote().isEmpty() || note.getUserId() <= 0) {
+            throw new IllegalStateException("Note cannot be empty. UserId needs to be greater then 0.");
+        }
+        else{
+            noteRepo.save(note);
+        }
+    }
 }
