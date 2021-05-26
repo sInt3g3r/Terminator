@@ -14,13 +14,13 @@ function cSend() {
 
 function help() {
    echo 'Examples:'
-   echo './api.bash post newTask task.json'
-   echo './api.bash delete delTask/1'
+   echo './api.bash post postTask task.json'
+   echo './api.bash del delTask/1'
    echo './api.bash get getTasks'
    echo './api.bash put putTask/1 task.json'
    echo ''
    echo '$1 = Method "post"'
-   echo '$2 = Endpoint "newTask", "delTask/id"'
+   echo '$2 = Endpoint "postTask", "delTask/id"'
    echo '$3 = json File'
 }
 
@@ -38,7 +38,7 @@ then
    else
       help
    fi
-elif [ "$1" = "delete" ]
+elif [ "$1" = "del" ]
 then
    if [ -n "$2" ]
    then

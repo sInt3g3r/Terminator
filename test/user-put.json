@@ -1,5 +1,5 @@
    {
-      "description" : "Edit Benutzer, POST",
+      "description" : "Edit Benutzer, PUT",
       "roleId" : 2,
       "userName" : "Chad Tyrone",
       "userPw" : "New Password"

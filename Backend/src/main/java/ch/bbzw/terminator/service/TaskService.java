@@ -61,7 +61,7 @@ public class TaskService {
     public void postTask(Task task) {
         if (    task.getTaskTitel().isEmpty() ||
                 task.getTaskDate() == null ||
-                task.getUserId() <= 0
+                task.getUserId() == null // doesn't work
         ) {
             throw new IllegalStateException("TaskTitel cannot be empty. TaskDate needs to be valid. UserId needs to be greater then 0.");
         }
