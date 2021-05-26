@@ -19,20 +19,25 @@ public class NoteController {
         this.noteService = noteService;
     }
 
-    @GetMapping(path = "getNotes") //readAll
+    //readAll
+    @GetMapping(path = "getNotes")
     public List<Note> getNotes() {
         return noteService.getNotes();
     }
 
-    @GetMapping(path = "getNote/{id}") //readSingle
+    //readSingle
+    @GetMapping(path = "getNote/{id}")
     public Optional<Note> getNote(@PathVariable("id") long id) { return noteService.getNote(id);}
 
-    @DeleteMapping(path = "delNote/{id}") //delete
+    //delete
+    @DeleteMapping(path = "delNote/{id}")
     public void delNote(@PathVariable("id") long id) { noteService.delNote(id);}
 
-    @PutMapping(path = "putNote/{id}") //replace
+    //replace
+    @PutMapping(path = "putNote/{id}")
     public void putNote(@PathVariable("id") long id, @RequestBody Note note) { noteService.putNote(id,note);}
 
-    @PostMapping(path = "postNote") //create
+    //create
+    @PostMapping(path = "postNote")
     public void postNote(@RequestBody Note note) { noteService.postNote(note);}
 }

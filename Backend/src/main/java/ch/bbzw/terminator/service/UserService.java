@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service //Notwendig für @Autowired (bean)
 public class UserService {
@@ -17,14 +18,23 @@ public class UserService {
         this.userRepo = userRepo;
     }
 
+    //readAll
     public List<User> getUsers() {
         return userRepo.findAll();
     }
 
-    public void postUser(User user) {
-        userRepo.save(user);
+    //readSingle
+    public Optional<User> getUser(long id) {
+        boolean exists = userRepo.existsById(id);
+        if (exists) {
+            return userRepo.findById(id);
+        }
+        else {
+            throw new IllegalStateException("ID: "+id+" not found.");
+        }
     }
 
+    //delete
     public void delUser(Long id) {
         boolean exists = userRepo.existsById(id);
         if (exists) {
@@ -35,6 +45,7 @@ public class UserService {
         }
     }
 
+    //replace
     public void putUser(Long id, User user) {
         boolean exists = userRepo.existsById(id);
         if (exists) {
@@ -43,6 +54,19 @@ public class UserService {
         }
         else {
             throw new IllegalStateException("ID: "+id+" not found.");
+        }
+    }
+
+    //create
+    public void postUser(User user) {
+        if (    user.getUserName().isEmpty() ||
+                user.getUserPw().isEmpty() ||
+                user.getRoleId() <= 0
+            ) {
+            throw new IllegalStateException("UserName,Password cannot be empty. RoleId needs to be greater then 0.");
+        }
+        else{
+            userRepo.save(user);
         }
     }
 }
