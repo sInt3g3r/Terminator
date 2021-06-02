@@ -1,0 +1,70 @@
+/*  */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20em;
+}
+
+/* Nav-Bar */
+
+#blankNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cornflowerblue;
+    color: white;
+    height: 2.5em;
+    border-radius: 5px;
+}
+
+/* Login Form */
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 250px;
+}
+
+#login > label, input{
+    flex-grow: 1 1 auto;
+    width: 16em;
+    margin-top: 0.5em;
+}
+
+#login > button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 2.5em;
+    width: 16em;
+    font-weight: bold;
+}
+
+#login > label {
+    text-align: center;
+}

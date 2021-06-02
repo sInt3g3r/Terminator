@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminator Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="/js/index.js" defer></script>
 </head>
-<body>
 
-<nav>
-    <div class="topnav">
-        <div id="burger">
-            <div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-            </div>
-            <div>
-                <h3>Login</h3>
-            </div>
-        </div>
-    </div>
-</nav>
+<body>
+    <nav id="blankNav">
+        <h3>Terminator Login</h3>
+    </nav>
+    <main>
+        <form id="login">
+            <label for="uname">Benutzername</label>
+            <input type="text" id="uname" name="uname">
+            <label for="upw">Password</label>
+            <input type="password" id="upw" name="upw">
+            <button type="button" id="btnLogin">Login</button>
+        </form>
+    </main>
 </body>
+
 </html>
