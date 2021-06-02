@@ -1,12 +1,10 @@
 
+var burger = document.getElementById("mainMenu");
+burger.style.display = "none";
 
 function toggleBurgerMenu() {
-    var burger = document.getElementById("mainMenu");
-    console.log(burger);
-    if (burger.style === "flex")
-        { burger.style.display = "none"
-          console.log = "1"}
+    if (burger.style.display === "none")
+        {  burger.style.display = "flex";}
     else
-        { burger.style.display = "flex"
-          console.log = "2"}
+        { burger.style.display = "none";}
 }
