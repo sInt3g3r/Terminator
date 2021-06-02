@@ -1,0 +1,67 @@
+/*  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: khaki;
+}
+
+/* Burger */
+
+nav {
+    background-color: lavenderblush;
+    display:flex;
+}
+
+#burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    min-width: 4em;
+    min-height: 3em;
+    cursor: pointer;
+}
+
+#burger > div div {
+    width: 35px;
+    height: 4px;
+    background-color: azure;
+    margin:6px 0;
+}
+
+#currentPage {
+    background-color: royalblue;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+#currentPage > * {
+    color: azure;
+    margin-left: 1em;
+}
+
+/* mainMenu */
+
+#mainMenu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#mainMenu > li {
+    background-color: royalblue;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    font-weight: bold;
+    color:azure;
+}
+
+#mainMenu li:hover {
+    background-color: mediumblue;
+}

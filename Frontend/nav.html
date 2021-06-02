@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="/js/nav.js" defer></script>
 </head>
+
 <body>
-    
+    <nav>
+        <div id="burger" onclick="toggleBurgerMenu()">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id="currentPage">
+            <h3>myPage</h3>
+        </div>
+    </nav>
+    <section>
+        <ul id="mainMenu">
+            <li>Aufgaben</li>
+            <li>Bearbeiten</li>
+            <li>Admin Panel</li>
+            <li>Benutzer Anlegen</li>
+        </ul>
+    </section>
 </body>
+
 </html>

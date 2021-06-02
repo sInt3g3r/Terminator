@@ -1,6 +1,6 @@
 
 var myBtn = document.getElementById("btnLogin");
-myBtn.addEventListener("click", () => changePage("www.google.ch"));
+myBtn.addEventListener("click", () => changePage("nav.html"));
 
 
 
