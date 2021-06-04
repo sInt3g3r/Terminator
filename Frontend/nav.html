@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/nav.css">
     <script src="/js/nav.js" defer></script>
 </head>
@@ -19,19 +18,20 @@
                 <div></div>
                 <div></div>
             </div>
+            <div id="currentPage">
+                <h3>myPage</h3>
+            </div>
         </div>
-        <div id="currentPage">
-            <h3>myPage</h3>
-        </div>
+        <section>
+            <ul id="mainMenu">
+                <a href="tasks.html"><li>Aufgaben</li></a>
+                <a href="edit.html"><li>Bearbeiten</li></a>
+                <a href="admin.html"><li>Admin Panel</li></a>
+                <a href="user.html"><li>Benutzer Anlegen</li></a>
+            </ul>
+        </section>
     </nav>
-    <section>
-        <ul id="mainMenu">
-            <li>Aufgaben</li>
-            <li>Bearbeiten</li>
-            <li>Admin Panel</li>
-            <li>Benutzer Anlegen</li>
-        </ul>
-    </section>
+
 </body>
 
 </html>

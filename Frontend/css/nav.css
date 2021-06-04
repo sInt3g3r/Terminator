@@ -14,6 +14,7 @@ body {
 nav {
     background-color: lavenderblush;
     display:flex;
+    flex-direction: column;
 }
 
 #burger {
@@ -24,6 +25,7 @@ nav {
     min-width: 4em;
     min-height: 3em;
     cursor: pointer;
+    padding-left: 1em;
 }
 
 #burger > div div {
@@ -53,7 +55,7 @@ nav {
     list-style: none;
 }
 
-#mainMenu > li {
+#mainMenu > a > li {
     background-color: royalblue;
     padding-top: 1em;
     padding-bottom: 1em;

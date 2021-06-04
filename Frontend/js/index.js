@@ -1,6 +1,6 @@
 
 var myBtn = document.getElementById("btnLogin");
-myBtn.addEventListener("click", () => changePage("nav.html"));
+myBtn.addEventListener("click", () => changePage("tasks.html"));
 
 
 
@@ -15,5 +15,4 @@ function collapseBurgerMenu() {
 
 function changePage(page) {
   window.location = page;
-  //console.log("click");
 }

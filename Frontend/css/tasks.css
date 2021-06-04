@@ -1,0 +1,37 @@
+/*  */
+
+#topbar {
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em;
+}
+
+#monthselect {
+    background-color: indianred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#monthselect > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid black;
+    margin: 0.3em;
+}
+
+#tasks {
+    background-color: lightskyblue;
+    flex: 1 1 auto;
+}
+
+#content {
+    display: flex;
+}

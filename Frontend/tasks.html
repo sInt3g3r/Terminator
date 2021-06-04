@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/tasks.css">
+    <script src="/js/nav.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div id="burger" onclick="toggleBurgerMenu()">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="currentPage">
+                <h3>Aufgaben</h3>
+            </div>
+        </div>
+
+        <section>
+            <ul id="mainMenu">
+                <a href="tasks.html">
+                    <li>Aufgaben</li>
+                </a>
+                <a href="edit.html">
+                    <li>Bearbeiten</li>
+                </a>
+                <a href="admin.html">
+                    <li>Admin Panel</li>
+                </a>
+                <a href="user.html">
+                    <li>Benutzer Anlegen</li>
+                </a>
+            </ul>
+        </section>
+    </nav>
+
+    <section id="topbar">
+        <select name="year" id="year">
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+        </select>
+        <button type="button" id="btnToday">Heute</button>
+    </section>
+
+    <div id="content">
+        <aside id="monthselect">
+            <div>
+                <p>1</p>
+            </div>
+            <div>
+                <p>2</p>
+            </div>
+            <div>
+                <p>3</p>
+            </div>
+            <div>
+                <p>4</p>
+            </div>
+            <div>
+                <p>5</p>
+            </div>
+            <div>
+                <p>6</p>
+            </div>
+            <div>
+                <p>7</p>
+            </div>
+            <div>
+                <p>8</p>
+            </div>
+            <div>
+                <p>9</p>
+            </div>
+            <div>
+                <p>10</p>
+            </div>
+            <div>
+                <p>11</p>
+            </div>
+            <div>
+                <p>12</p>
+            </div>
+        </aside>
+
+        <div id="tasks">
+            <p>tasks</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
