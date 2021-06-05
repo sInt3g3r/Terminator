@@ -1,5 +1,7 @@
 /*  */
 
+/* Bars */
+
 #topbar {
     background-color: green;
     display: flex;
@@ -34,4 +36,26 @@
 
 #content {
     display: flex;
+}
+
+/* Tasks */
+
+.day {
+    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.day-header {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-content {
+    background-color:lavender;
+    display: flex;
+    flex-direction: row;
 }
