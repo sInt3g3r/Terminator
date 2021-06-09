@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="114mm"
+   height="81mm"
+   viewBox="0 0 113.99999 81"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
+   sodipodi:docname="person2.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.3273709"
+     inkscape:cx="385.3482"
+     inkscape:cy="281.38329"
+     inkscape:window-width="1920"
+     inkscape:window-height="1176"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="mm" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient6522"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#777777;stop-opacity:1;"
+         offset="0"
+         id="stop6520" />
+    </linearGradient>
+    <filter
+       id="mask-powermask-path-effect1520_inverse"
+       inkscape:label="filtermask-powermask-path-effect1520"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect1520_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect1520_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path819"
+       style="fill:#7c7c7c;fill-opacity:1;fill-rule:evenodd;stroke-width:0.241657"
+       d="M 57.97188,5.1927275 A 48.235248,45.844684 0 0 0 9.7365819,51.037475 48.235248,45.844684 0 0 0 17.562977,76.037499 H 98.380782 A 48.235248,45.844684 0 0 0 106.20718,51.037475 48.235248,45.844684 0 0 0 57.97188,5.1927275 Z m 0.567923,4.3759603 A 42.454028,41.65841 0 0 1 100.99354,51.227126 42.454028,41.65841 0 0 1 94.146933,73.906362 37.081589,41.059848 0 0 0 74.575,45.111737 20.92924,19.132066 0 0 1 57.809617,52.810493 20.92924,19.132066 0 0 1 41.013227,45.077114 37.081589,41.059848 0 0 0 21.757554,71.970562 42.454028,41.65841 0 0 1 16.085548,51.227126 42.454028,41.65841 0 0 1 58.539803,9.5686878 Z M 57.773959,12.555069 A 19.130659,19.132066 0 0 0 38.643343,31.687234 19.130659,19.132066 0 0 0 57.773959,50.818882 19.130659,19.132066 0 0 0 76.90509,31.687234 19.130659,19.132066 0 0 0 57.773959,12.555069 Z" />
+    <rect
+       style="fill:#7c7c7c;fill-opacity:1;stroke-width:0.264583"
+       id="rect3680"
+       width="3.398664"
+       height="4.7848415"
+       x="51.302067"
+       y="42.751686" />
+  </g>
+</svg>

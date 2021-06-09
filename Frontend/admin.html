@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="/js/nav.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div id="burger" onclick="toggleBurgerMenu()">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="currentPage">
+                <h3>myPage</h3>
+            </div>
+        </div>
+        <div id="navSection">
+            <ul id="mainMenu">
+                <a href="tasks.html"><li>Aufgaben</li></a>
+                <a href="edit.html"><li>Bearbeiten</li></a>
+                <a href="admin.html"><li>Admin Panel</li></a>
+                <a href="user.html"><li>Benutzer Anlegen</li></a>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <p>Neuer Benutzer</p>
+        <button type="button" id="btnAdd">+</button>
+    </header>
+    <section>
+        <div id="userWrapper">
+            <div class="userIcon">
+                <img src="/img/person.svg" alt="SVG mit img Tag laden" width="100%" height="100%" >
+            </div>
+
+            <div class="userName full">
+                Test 1
+            </div>
+
+            <div class="userRole full">
+                Test 2
+            </div>
+
+            <div class="userEdit">
+                <button class="full" type="button">/</button>
+            </div>
+
+            <div class="userDelete">
+                <button class="full" type="button" class="btnUserDel">*</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

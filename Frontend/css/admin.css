@@ -1,0 +1,50 @@
+/*  */
+
+#userWrapper {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 5em auto 3em 3em;
+    grid-template-rows: auto auto;
+    background-color: white;
+    grid-template-areas: 
+    "icon name edit delete"
+    "icon role edit delete";
+}
+
+.userIcon {
+    grid-area: icon;
+    border: 2px solid lightgray;
+    padding: 0.2em;
+}
+
+.userName {
+    grid-area: name;
+    border: 1px solid lightgray;
+}
+
+.userRole {
+    grid-area: role;
+    border: 1px solid lightgray;
+}
+
+.userEdit {
+    grid-area: edit;
+    border: 1px solid lightgray;
+    padding: 0.2em;
+}
+
+.userDelete {
+    grid-area: delete;
+    border: 1px solid lightgray;
+    padding: 0.2em;
+}
+
+.btnUserDel {
+    width: 50px;
+    height: 50px;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
