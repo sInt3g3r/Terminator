@@ -3,14 +3,14 @@
 /* Bars */
 
 #topbar {
-    background-color: green;
+    background-color: white;
     display: flex;
     justify-content: space-evenly;
     padding: 0.5em;
 }
 
 #monthselect {
-    background-color: indianred;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
 }
 
 #tasks {
-    background-color: lightskyblue;
+    background-color: white;
     flex: 1 1 auto;
 }
 
@@ -41,21 +41,24 @@
 /* Tasks */
 
 .day {
-    background-color: violet;
+    background-color: lavender;
     display: flex;
     flex-direction: column;
     padding: 0.5em;
+    border-radius: 1em;
 }
 
 .day-header {
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.day-header > p {
+    font-weight: bold;
+}
+
 .day-content {
-    background-color:lavender;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
