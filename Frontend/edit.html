@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/edit.css">
+    <script src="/js/nav.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div id="burger" onclick="toggleBurgerMenu()">
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="currentPage">
+                <h3>myPage</h3>
+            </div>
+        </div>
+        <div id="navSection">
+            <ul id="mainMenu">
+                <a href="tasks.html">
+                    <li>Aufgaben</li>
+                </a>
+                <a href="edit.html">
+                    <li>Bearbeiten</li>
+                </a>
+                <a href="admin.html">
+                    <li>Admin Panel</li>
+                </a>
+                <a href="user.html">
+                    <li>Benutzer Anlegen</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <p>Mo, 09.10.2021</p>
+    </header>
+    <section>
+        <div>
+            <label for="etitel">Titel:</label>
+            <input type="text" id="etitel" name="etitel"><br><br>
+        </div>
+        <div class="detailArea">
+            <label for="tdetail">Detail:</label>
+            <textarea id="tdetail" name="tdetail" rows="4" cols="50">
+            </textarea>
+        </div>
+    </section>
+    <footer>
+        <button type="button">Abbrechen</button> 
+        <button type="button">Speichern</button> 
+    </footer>
+</body>
+
+</html>
